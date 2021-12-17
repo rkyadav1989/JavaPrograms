@@ -9,11 +9,13 @@ public class Main {
     //One vacation day = 8 hours of work
 
     public static double salaryCalculator (double hoursPerWeek, double amountPerHour, double vacationDays) {
-        return 100;
+        double unpaidAmount = vacationDays * 8 * amountPerHour ;
+        double annualGrossSalary = (hoursPerWeek * amountPerHour * 52) - unpaidAmount;
+        return annualGrossSalary;
 
     }
     public static void main(String[] args) {
-        Scanner input = new Scanner();
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Please enter hours completed by employee per week");
         double hoursPerWeek = input.nextDouble();
@@ -24,19 +26,19 @@ public class Main {
 
         System.out.println("Please enter hourly billing rate of employee");
         double amountPerHour = input.nextDouble();
-        while (hoursPerWeek <= 0) {
+        while (amountPerHour <= 0) {
             System.out.println("Please enter valid hourly billing rate of employee");
             amountPerHour = input.nextDouble();
         }
 
         System.out.println("Please enter vacation days for employee");
         double vacationDays = input.nextDouble();
-        while (hoursPerWeek < 0) {
-            System.out.println("Please enter valid hourly vacation days for employee");
+        while (vacationDays < 0) {
+            System.out.println("Please enter valid vacation days for employee");
             vacationDays = input.nextDouble();
         }
 
         double salary = salaryCalculator(hoursPerWeek, amountPerHour, vacationDays);
-        System.out.println("Employee's gross anual salary is: " + salary);
+        System.out.println("Employee's gross annual salary is: " + salary);
     }
 }
