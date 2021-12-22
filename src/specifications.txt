@@ -1,0 +1,34 @@
+Specs:
+Money Managemet System for school:
+    1) Students
+    2) Teacher
+    3) Funds
+
+
+Tasks:
+    1) Keep track of student total fees
+    2) Student fee already paid
+    3) Teacher fees
+
+
+School contains:
+    1) Teachers
+    2) Student
+    3) Total money earned (Student fee)
+    4) Total Money spent (teacher Salry)
+
+
+//Teacher attribute
+    1) id
+    2) Name
+    3) Salary
+
+//Student
+    1) id
+    2) Name
+    3) Grade
+    4) Fees paid
+    4) fees total
+
+
+///try to ask user input in main class
