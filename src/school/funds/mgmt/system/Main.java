@@ -8,6 +8,9 @@ public class Main {
         Teacher thejus = new Teacher(1,"Thejus", 5000);
         Teacher vaughn = new Teacher(2, "Vaughn", 7000);
         Teacher rob = new Teacher(3,"Rob",6000);
+        Teacher abdessamie  = new Teacher(3,"Rob",6000);; // new locion in memory
+
+        Teacher sohail = rob; // the same location in memory (the same object)
 
         List<Teacher> teacherList = new ArrayList<>();
         teacherList.add(thejus);
