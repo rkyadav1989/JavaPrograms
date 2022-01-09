@@ -1,0 +1,5 @@
+Array:
+    - Fixed in size.
+    - Fast for data retrieval.
+    - Compact memory usage if size is known.
+    - Delete operation is hard.
