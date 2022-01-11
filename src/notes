@@ -1,0 +1,25 @@
+List Interface:
+- An ordered collection also know as sequence.
+- Allow duplicates
+- Not Fixed in size like arrays
+- Fast for data retrivals
+- Various implementations
+    - ArrayList
+    - Stack
+    - Vector
+    - Other
+
+-------------------------
+
+Stack:
+- The Stack class represents a LIFO stack of objects.
+- It extends class Vector with five operations that allow a vector to be treated a stack.
+        - The usual "push" and "pop" operations were provided, as well as method to "peek" at top item on stack.
+        - a method to test whether stack is empty and a method to search the stack for an item and discover how far it is from the top.
+
+-------------------------
+
+Queue:
+- DataStructure works on basis of first in first out principle.
+- A collection designed for holding elements prior to processing.
+- It is an interface and popular implementation is LinkedList
