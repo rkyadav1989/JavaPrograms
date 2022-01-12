@@ -22,4 +22,11 @@ Stack:
 Queue:
 - DataStructure works on basis of first in first out principle.
 - A collection designed for holding elements prior to processing.
-- It is an interface and popular implementation is LinkedList
+- It is an interface and popular implementation is LinkedList.
+
+-------------------------
+
+Linkedlist or Doubly linked list:
+- It same as queue but each element has reference to its previous and next element.
+- previous reference of first element and next reference of last element will be null.
+- because of these references linked list is bit expensive for memory.
