@@ -26,7 +26,11 @@ Queue:
 
 -------------------------
 
-Linkedlist or Doubly linked list:
+Linkedlist or Doubly linked list: (https://www.baeldung.com/java-linkedlist)
 - It same as queue but each element has reference to its previous and next element.
 - previous reference of first element and next reference of last element will be null.
 - because of these references linked list is bit expensive for memory.
+- its not synchronized
+- Its Iterator and ListIterator iterators are fail-fast (which means that after the iterator's creation, if the list is modified, a ConcurrentModificationException will be thrown)
+- Although LinkedList is not synchronized, we can retrieve a synchronized version of it by calling the Collections.synchronizedList method, like:
+- full documentation
